@@ -31,8 +31,8 @@ namespace InterviewTest_TestProject
         public void InsertAndRemoveTests()
         {
 
-            list.InstertAtEnd(5);
-            list.InstertAtEnd(2);
+            list.InsertAtEnd(5);
+            list.InsertAtEnd(2);
 
             actualValue = list.RemoveFirst();
             Assert.AreEqual(5, actualValue);
@@ -45,7 +45,7 @@ namespace InterviewTest_TestProject
             Assert.AreEqual(0, actualValue);
 
             //Inset and Remove one more after list became empty
-            list.InstertAtEnd(3);
+            list.InsertAtEnd(3);
 
             actualValue = list.RemoveFirst();
             Assert.AreEqual(3, actualValue);
@@ -54,7 +54,7 @@ namespace InterviewTest_TestProject
         [TestMethod]
         public void InsertOneRemoveTwo()
         {
-            list.InstertAtEnd(5);
+            list.InsertAtEnd(5);
 
             actualValue = list.RemoveFirst();
             Assert.AreEqual(5, actualValue);
@@ -75,7 +75,7 @@ namespace InterviewTest_TestProject
         {
             //Add 100 numbers to list
             for (int i = 0; i < 100; i++)
-                list.InstertAtEnd(i);
+                list.InsertAtEnd(i);
 
             //Verify all 100 numbers are removed from List in order.
             for (int expectedValue = 0; expectedValue < 100; expectedValue++)

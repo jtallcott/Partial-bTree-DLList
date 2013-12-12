@@ -22,7 +22,7 @@ namespace InterviewTest
         private DoubleLinkedListNode<T> _first = null;
         private DoubleLinkedListNode<T> _last = null;
     
-        public void InstertAtEnd(T newValue)
+        public void InsertAtEnd(T newValue)
         {
             if (_first == null) //Empty List
             {
